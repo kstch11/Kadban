@@ -2,20 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kadban</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/svg.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Open+Sans:wght@300&display=swap');
     </style>
 </head>
-<body>
+<body onload="svgClick(0);">
     <header>
         <nav class="nav">
             <span id="sidebar-button">&#9776;</span>
             <h1 id="title" class="main-title">Kadban</h1>
             <span class="icons" >
-                <svg id="bucket" width="25px" height="25px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <svg onmousedown="svgClick(1);" id="bucket" width="25px" height="25px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style>
                     </defs>
