@@ -4,7 +4,6 @@ html, body {
 }
 
 body {
-    /*padding: 0;*/
     margin: 0;
     background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     background-repeat: no-repeat;
@@ -260,10 +259,9 @@ input[type="text"]::placeholder {
     color: black;
     padding: 0.5em 1em;
     box-shadow: 0px 2px #D12C8A;
-    margin-bottom: 2rem;
 }
 
-#add-board-button:hover {
+#add-board-button:hover, #show-frog:hover {
     cursor: pointer;
     color: white;
     box-shadow: 0px 2px white;
@@ -272,6 +270,25 @@ input[type="text"]::placeholder {
 #add-board-text {
     width:85%;
     color:white;
+    z-index: 1;
+}
+
+
+#show-frog {
+    border: none;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: #d16ba5;
+    color: black;
+    padding: 0.5em 1em;
+    box-shadow: 0px 2px #D12C8A;
+    justify-content: center;
+    visibility: visible;
+    z-index: 1;
+}
+
+#frog {
+    visibility: hidden;
 }
 
 .plus-button {

@@ -26,6 +26,10 @@ const noSound = document.getElementById('no-sound');
 let audio = new Audio();
 audio.src = "./sound/Beauty.mp3";
 
+const frog = document.getElementById('frog');
+const showFrog = document.getElementById('show-frog');
+const hideFrog = document.getElementById('hide-frog');
+
 let appData = {
     'boards': [],
     'settings': {
@@ -156,19 +160,6 @@ function addBoard() {
     saveData();
 }
 
-noSound.addEventListener("click", () => {
-    sound.style.setProperty('visibility', 'visible');
-    sound.style.setProperty('z-index', '2');
-    noSound.style.setProperty('visibility', 'hidden');
-    audio.volume = 0.5;
-    audio.play();
-})
-sound.addEventListener('click', () => {
-    sound.style.setProperty('visibility', 'hidden');
-    sound.style.setProperty('z-index', '-1');
-    noSound.style.setProperty('visibility', 'visible');
-    audio.pause();
-})
 
 /* Classes */
 class Item {
@@ -519,7 +510,6 @@ const scroll_update = (e) => {
     mainContainer.scrollLeft = scroll_scrollLeft - scroll;
 };
 
-// Add the event listeners
 mainContainer.addEventListener('mousemove', scroll_update);
 mainContainer.addEventListener('mousedown', scroll_startDragging, false);
 mainContainer.addEventListener('mouseup', scroll_stopDragging, false);
@@ -652,6 +642,30 @@ deleteButton.addEventListener('click', () => {
     alert(`Deleted board "${boardName}"`)
     saveData();
 });
+
+noSound.addEventListener("click", () => {
+    sound.style.setProperty('visibility', 'visible');
+    sound.style.setProperty('z-index', '2');
+    noSound.style.setProperty('visibility', 'hidden');
+    audio.volume = 0.5;
+    audio.play();
+})
+sound.addEventListener('click', () => {
+    sound.style.setProperty('visibility', 'hidden');
+    sound.style.setProperty('z-index', '-1');
+    noSound.style.setProperty('visibility', 'visible');
+    audio.pause();
+})
+
+showFrog.addEventListener('click', () => {
+    frog.style.setProperty('visibility', 'visible');
+    showFrog.innerText = 'Hide frog';
+})
+
+showFrog.addEventListener('dblclick', () => {
+    frog.style.setProperty('visibility', 'hidden');
+    showFrog.innerText = 'Show frog';
+})
 
 /* Sidebar */
 function toggleSidebar() {
