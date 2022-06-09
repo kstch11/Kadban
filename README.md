@@ -22,11 +22,11 @@
     - [x] Vendor prefixy 1
     - [x] CSS3 transformace 2D/3D 2
     - [x] CSS3 transitions/animations 2 **REQUIRED**
-    - [ ] Media queries stránky fungují i na mobilních zařízeních i jiných (tedy nerozpadají se)  2
+    - [x] Media queries stránky fungují i na mobilních zařízeních i jiných (tedy nerozpadají se)  2
 
 4. Javascript
     - [x] OOP přístup prototypová dědičnost, její využití, jmenné prostory 2 **REQUIRED**
-    - [ ] Použití JS frameworku či knihovny  použití a pochopení frameworku či knihovny jQuery, React, Vue .. 1
+    - [x] Použití JS frameworku či knihovny  použití a pochopení frameworku či knihovny jQuery, React, Vue .. 1
     - [x] Použití pokročilých JS API  využití pokročilých API (File API, Geolocation, Drag & Drop, LocalStorage, Sockety, ...) 3 **REQUIRED**
     - [ ] Funkční historie posun tlačítky zpět/vpřed prohlížeče - pokud to vyplývá z funkcionatilty (History API) 2
     - [x] Ovládání medií  použití Média API (video, zvuk), přehrávání z JS 1
