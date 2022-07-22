@@ -1,7 +1,6 @@
 # KAJ Semestral Project
 
 # Kadban
-[TAP HERE](https://kstch11.github.io)
 
 ## Requirments
 1. Dokumentace/Popis
